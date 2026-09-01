@@ -34,6 +34,9 @@
     <ClCompile Include="..\deps\imgui_glfw_backend\imgui_impl_opengl3.cpp">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="demos.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include=".clang-format">
@@ -63,6 +66,9 @@
       <Filter>source</Filter>
     </ClInclude>
     <ClInclude Include="..\deps\imgui_glfw_backend\imgui_impl_opengl3.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="demos.h">
       <Filter>source</Filter>
     </ClInclude>
   </ItemGroup>

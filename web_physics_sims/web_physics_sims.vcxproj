@@ -26,6 +26,7 @@
     <ClCompile Include="..\deps\imgui\imgui_widgets.cpp" />
     <ClCompile Include="..\deps\imgui_glfw_backend\imgui_impl_glfw.cpp" />
     <ClCompile Include="..\deps\imgui_glfw_backend\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="demos.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -40,6 +41,7 @@
     <ClInclude Include="..\deps\imgui\imstb_truetype.h" />
     <ClInclude Include="..\deps\imgui_glfw_backend\imgui_impl_glfw.h" />
     <ClInclude Include="..\deps\imgui_glfw_backend\imgui_impl_opengl3.h" />
+    <ClInclude Include="demos.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
