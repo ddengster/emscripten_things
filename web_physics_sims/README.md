@@ -15,4 +15,9 @@ WIP set of physics sim demos. Based off glfw and imgui.
 
 - `emrun web/index.html` to launch a localhost server and webbrowser
 
+#### Integrating/Updating box2d
+
+- Download desired release of https://github.com/erincatto/box2d, follow `Building for Visual Studio` instructions but run `create_sln.bat` instead. 
+The sln contains a box2d project, change the setting to `RelWithDebInfo`, build it and that creates a box2d static library and include file. Copy both over.
+
 

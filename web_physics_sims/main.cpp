@@ -29,6 +29,9 @@
 #include "../deps/emscripten/emscripten_mainloop_stub.h"
 #endif
 
+#include <box2d/box2d.h>
+#include <box2d/math_functions.h>
+
 static void glfw_error_callback(int error, const char* description)
 {
     fprintf(stderr, "GLFW Error %d: %s\n", error, description);
@@ -121,6 +124,10 @@ int main(int, char**)
     bool show_demo_window = true;
     bool show_another_window = false;
     ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
+
+    b2WorldDef worldDef = b2DefaultWorldDef();
+    worldDef.gravity = b2Vec2{0.0f, -9.81f};
+    b2WorldId m_worldId = b2CreateWorld(&worldDef);
 
     // Main loop
 #ifdef __EMSCRIPTEN__
